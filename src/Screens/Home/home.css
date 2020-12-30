@@ -1,8 +1,9 @@
-
+.home{
+	background-color: #E7816B;
+}
 .homebg{
     height: 60vh;
-    width: 100vw;
-    background-color: #E7816B;
+    width: 99vw;
     
 }
 
@@ -14,12 +15,72 @@
 }
 .homesvg{
     overflow-x: hidden;
-    background-color: #E7816B;
-    
+}
+.phone{
+	right: 3%;
+	position: relative;
+	bottom: 90%;
+}
+.phone img{
+	width: 105%;
 }
 .homesvg img{
-    width: 180%;
+    width: 160%;
     margin-top: 5%;
+}
+.frames{
+	display: flex;
+	flex-flow: wrap;
+	background-color: #ffffff;
+    margin-top: -100%;
+}
+.frames div{
+	padding-top: 15%;
+	padding-left: 5%;
+	border-radius: 15%;
+}
+.frames img{
+	border-radius: 10%;
+	width: 80%;
+	background-image: linear-gradient(rgb(24, 22, 22), rgb(248, 248, 242));
+}
+.frames-txt a, .frames-txt p{
+	color: #ffffff;
+	font-size: smaller;
+}
+.one{
+	position: absolute;
+	top: 105%;
+	left: 30%;
+	font-size: larger;
+}
+.two{
+	position: absolute;
+	top: 135%;
+	left: 32%;
+	font-size: larger;
+}
+.three{
+	position: absolute;
+	top: 169%;
+	left: 30%;
+	font-size: larger;
+}
+.illustration{
+	display: flex;
+	flex-flow: wrap;
+	background-color: #ffffff;
+}
+.illustration p{
+	font-size: smaller;
+	font-family: "verdana";
+	font-weight: lighter;
+	color: #333136;
+}
+.illustration img{
+	background-color: aliceblue;
+	width: 40%;
+	border-radius: 50%
 }
 .myButton {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
