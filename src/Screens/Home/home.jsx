@@ -7,31 +7,42 @@ import Phone from '../../Assets/images/phone.png'
 import Col1 from '../../Assets/images/col1.jpg'
 import Col2 from '../../Assets/images/col2.jpg'
 import Col3 from '../../Assets/images/col3.jpg'
+import Col4 from '../../Assets/images/col4.jpg'
+import ColD5 from '../../Assets/images/cold5.jpg'
+import ColD6 from '../../Assets/images/cold6.jpg'
 import '../Home/home.css'
  const Home =()=>{
 
     return(
         <div>
+            
             <div className="home">
-        <div className="homesvg"><img src={BgLogo} /></div>
-        <div className="homebg" >
-            <div className="homeintro">
-            <h3>Award-winning custom<br/> designs and digital branding solutions</h3>
-            <p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
-                and engaging brand experiences. Find out more about our services.</p>
-                <button className="myButton">Learn More</button><br/>
+                
+                <div className="home-flex">
+                    <div className="homeintro">
+                    <h2>Award-winning custom<br/> designs and digital<br/> branding solutions</h2>
+                    <p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
+                     and engaging brand experiences. Find out more about our services.</p>
+                     <button className="myButton">Learn More</button>
+                    </div>
+                    <div className="phone">
+                    
+                    <img src={Phone}/>
+                    </div>
 
-            </div>
-            <div className='phone'><img src={Phone}/></div>
-            
-            
-        </div>
-        </div>
-        <div className="frames">
-            <div> <img src={Col1}/><div className="frames-txt one"><a href="#"><h4>Web Design</h4><p>View Projects</p></a></div></div>
-            <div><img src={Col2}/><div className="frames-txt two"><a href="#"><h4>App Design</h4><p>View Projects</p></a></div></div>
-            <div><img src={Col3}/><div className="frames-txt three"><a href="#"><h4>Graphic Design</h4><p>View Projects</p></a></div></div>
-        </div>
+                </div>
+                </div>
+                <div className="home-flexgrid">
+                    <div>
+                        <div className="item3"><img src={Col4}/> </div>
+                    </div>
+                    <div className="home-grid">
+                        <div><img src={ColD5}/></div>
+                        <div><img src={ColD6}/></div> 
+                    </div>
+                   </div>
+
+                  
         <div className="illustration">
             <div><img src={Ill1}/><h4> Passionate</h4><p>
             Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
@@ -43,6 +54,7 @@ import '../Home/home.css'
             We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
             strive to give them the best experience a company can provide.</p></div>
         </div>
+ 
         </div>
     )
 }

@@ -1,81 +1,64 @@
+body{
+	overflow-x: hidden;
+}
 .home{
 	background-color: #E7816B;
+	width: 70%;
+	margin-left: 16%;
+	color: #ffffff;
+	border-radius: 1%;
+	margin-bottom: 10%;
 }
-.homebg{
-    height: 60vh;
-    width: 99vw;
-    
+.home-flex{
+	display: flex;
+	flex-direction: row;
 }
 
 .homeintro{
-    position: absolute;
-    top: 15%;
-    color: #ffffff;
-    text-align: center;
+	margin-top: 10%;
+	margin-left: 5%;
+	text-align: left;
 }
 .homesvg{
     overflow-x: hidden;
 }
-.phone{
-	right: 3%;
-	position: relative;
-	bottom: 90%;
-}
+
 .phone img{
 	width: 105%;
 }
 .homesvg img{
-    width: 160%;
+    width: 20%;
     margin-top: 5%;
 }
-.frames{
+.home-flexgrid{
 	display: flex;
-	flex-flow: wrap;
-	background-color: #ffffff;
-    margin-top: -100%;
+	flex-direction: row;
+	margin-left: 15%;
 }
-.frames div{
-	padding-top: 15%;
-	padding-left: 5%;
-	border-radius: 15%;
+.home-flexgrid img{
+	width: 68%;
+	border-radius: 5%;
+	background-image: linear-gradient(red, yellow);
 }
-.frames img{
-	border-radius: 10%;
-	width: 80%;
-	background-image: linear-gradient(rgb(24, 22, 22), rgb(248, 248, 242));
+.home-grid img{
+	
+	margin-left: -50%;
 }
-.frames-txt a, .frames-txt p{
-	color: #ffffff;
-	font-size: smaller;
-}
-.one{
-	position: absolute;
-	top: 105%;
-	left: 30%;
-	font-size: larger;
-}
-.two{
-	position: absolute;
-	top: 135%;
-	left: 32%;
-	font-size: larger;
-}
-.three{
-	position: absolute;
-	top: 169%;
-	left: 30%;
-	font-size: larger;
-}
+
 .illustration{
 	display: flex;
-	flex-flow: wrap;
+	flex-direction: row;
 	background-color: #ffffff;
+	width: 70%;
+	margin-left: 16%;
+	margin-top: 7%;
 }
 .illustration p{
 	font-size: smaller;
 	font-family: "verdana";
 	font-weight: lighter;
 	color: #333136;
+	
 }
 .illustration img{
 	background-color: aliceblue;
@@ -83,9 +66,9 @@
 	border-radius: 50%
 }
 .myButton {
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
-	background-color:#f9f9f9;
+	box-shadow:inset 0px 1px 0px 0px #e0cbcb;
+	background:linear-gradient(to bottom, #d4aaaa 5%, #e9e9e9 100%);
+	background-color:#ebd4d4;
 	border-radius:3px;
 	border:1px solid #dcdcdc;
 	display:inline-block;
@@ -105,4 +88,44 @@
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+@media only screen and (min-width:768px){
+	.home, .frames, .illustration{
+		visibility: visible;
+	}
+}
+@media only screen and (max-width:680px){
+	.home{
+		width: 100vw;
+		margin: 0;
+		color: #ffffff;
+		border-radius: 1%;
+		margin-bottom: 10%;
+	}
+	.home-flex{
+		display: flex;
+		flex-direction: column;
+	}
+	.homeintro{
+		margin-top: 10%;
+		margin-left: 5%;
+		text-align: center;
+	}
+	.home-flexgrid{
+		display: flex;
+		flex-direction: column;
+        margin: 0;
+	}
+	.home-grid img{
+		margin-left:0%;
+	}
+	.illustration{
+		display: flex;
+		flex-direction: column;
+		background-color: #ffffff;
+		width: 70%;
+		margin-left: 16%;
+		margin-top: 7%;
+	}
+
 }
