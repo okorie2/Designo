@@ -81,7 +81,7 @@
     .aboutflex{
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 30%; 
+        margin-top: 70%; 
     }
     .aboutflex img{
         height: 40vh;

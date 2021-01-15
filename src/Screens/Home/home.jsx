@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import Graphframe from '../../components/Frames/graphics'
 import Appframe from '../../components/Frames/app'
 import BgLogo from '../../Assets/SVGs/mylogo.svg'
@@ -18,7 +20,10 @@ import ColD6 from '../../Assets/images/cold6.jpg'
 import '../Home/home.css'
 
  const Home =()=>{
-
+     useEffect(() => {
+         Aos.init({duration:2000})
+         
+     }, []);
     return(
         <div>
             
@@ -29,7 +34,7 @@ import '../Home/home.css'
                     <h2>Award-winning custom<br/> designs and digital<br/> branding solutions</h2><br/>
                     <h4>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
                      and engaging brand experiences. Find out more about our services.</h4>
-                     <button className="myButton">Learn More</button>
+                     <button className="myButton"><Link to ="/about">Learn More</Link></button>
                     </div>
                     <div className="phone">
                     
@@ -42,7 +47,7 @@ import '../Home/home.css'
 
                 <div className="home-flexgrid">
                     <div>
-                    <div className="item1"> 
+                    <div className="item1" data-aos="slide-up"> 
                         <div >
                         <h3><Link to="/web" className="weblink">Web Design</Link></h3>
                         <p><Link to="/web" className="weblink"> View Projects</Link> </p>
@@ -50,7 +55,7 @@ import '../Home/home.css'
                         </div>
                        </div>
                     </div>
-                    <div className="homeflex">
+                    <div className="homeflex" data-aos="fade-down">
                         <div><Graphframe/></div><br></br>
                         <div><Appframe/></div>
                     </div>
@@ -58,7 +63,7 @@ import '../Home/home.css'
                 
                    <div className="homesvg"><img src={BgLogo}/></div>
                   
-        <div className="illustration">
+        <div className="illustration" data-aos="fade-up">
             <div><img src={Ill1}/><h4> Passionate</h4><p>
             Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
             art, design, and technology into exciting new solutions.</p></div>
