@@ -130,9 +130,15 @@ body{
 		flex-direction: column;
 	}
 	.homeintro{
-		margin-top: 10%;
+		margin-top: 20%;
 		margin-left: 5%;
 		text-align: center;
+	}
+	.homeintro .myButton{
+		margin-top: 10%;
+	}
+	.phone img{
+		width: 100%;
 	}
 	.home-flexgrid{
 		display: flex;
