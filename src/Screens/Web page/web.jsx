@@ -1,4 +1,6 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import TextCard from '../../components/textcard'
 import Frames from '../../components/Frames/app'
 import Graphicframe from '../../components/Frames/graphics'
@@ -12,6 +14,10 @@ import Web5 from '../../Assets/images/webimg5.jpg'
 import Web6 from '../../Assets/images/webimg6.jpg'
 import Leaf from '../../Assets/SVGs/leaf.svg'
 const Web = (props)=>{
+    useEffect(() => {
+        Aos.init({duration:2000})
+        
+    }, []);
     const [texts, setText] = useState([`Web design `, `We build websites that serve as powerful marketing tools`, `and bring memorable brand experiences.`]);
     return(
         <>
@@ -30,31 +36,31 @@ const Web = (props)=>{
                     <h4>shipping</h4>A multi-carrier shipping website for ecommerce businesses
                 </div>
             </div>
-            <div className="tabflex">
+            <div className="tabflex" data-aos="fade-zoom-in">
                 <div><img src={Web2}/></div>
                 <div className="card">
                     <h4>shipping</h4>A multi-carrier shipping website for ecommerce businesses
                 </div>
             </div>
-            <div className="tabflex"> 
+            <div className="tabflex"data-aos="fade-zoom-in"> 
                 <div><img src={Web3}/></div>
                 <div className="card">
                     <h4>shipping</h4>A multi-carrier shipping website for ecommerce businesses
                 </div>
             </div>
-            <div className="tabflex">
+            <div className="tabflex" data-aos="slide-right">
                 <div><img src={Web4}/></div>
                 <div className="card">
                     <h4>shipping</h4>A multi-carrier shipping website for ecommerce businesses
                 </div>
             </div>
-            <div className="tabflex">
+            <div className="tabflex" data-aos="fade-zoom-in">
                 <div><img src={Web5}/></div>
                 <div className="card">
                     <h4>shipping</h4>A multi-carrier shipping website for ecommerce businesses
                 </div>
             </div>
-            <div className="tabflex">
+            <div className="tabflex" data-aos="slide-left">
                 <div><img src={Web6}/></div>
                 <div className="card">
                 <h4>shipping</h4>A multi-carrier shipping website for ecommerce businesses

@@ -1,4 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import Webframe from '../../components/Frames/web'
 import Appframe from '../../components/Frames/app'
 import TextCard from '../../components/textcard'
@@ -8,6 +10,9 @@ import Graphics3 from '../../Assets/images/graphics3.jpg'
 import Leaf from '../../Assets/SVGs/leaf.svg'
 import '../Graphics page/graphics.css'
 const Graphics = (props)=>{
+    useEffect(() => {
+        Aos.init({duration:2000});
+    }, []);
 const [texts, setText] = useState([` Graphic design `, `  We deliver eye-catching branding materials that are  `, `tailored to meet your business objectives.`]);
     return(
         <>
@@ -19,18 +24,18 @@ const [texts, setText] = useState([` Graphic design `, `  We deliver eye-catchin
             ))}
         
         </div>
-        <div className="web-grid">
-            <div><img src={Graphics1}/>
+        <div className="web-grid" >
+            <div><img src={Graphics1} />
                 <div className=" first card">
                     <h4>shipping</h4>A multi-carrier shipping website for ecommerce businesses
                 </div>
             </div>
             <div><img src={Graphics2}/>
-                <div className="card">
+                <div className="card" data-aos="fade-zoom-in">
                     <h4>shipping</h4>A multi-carrier shipping website for ecommerce businesses
                 </div>
             </div>
-            <div><img src={Graphics3}/>
+            <div><img src={Graphics3} data-aos="fade-zoom-in"/>
                 <div className="card">
                     <h4>shipping</h4>A multi-carrier shipping website for ecommerce businesses
                 </div>

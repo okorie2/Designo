@@ -18,9 +18,9 @@ const Footer = ()=>{
        
             <div className="footer-flex">
             <div className="fter"><EcoIcon className="logo"/><b className="fter title"><Link to="/"> D E S I G N O</Link></b></div>
-            <div><Link to="/about">OUR COMPANY</Link></div>
-            <div><Link to="/location">LOCATIONS</Link></div>
-            <div><Link to="/contact">CONTACT</Link></div>
+            <div className="ftlink"><Link to="/about">OUR COMPANY</Link></div>
+            <div className="ftlink"><Link to="/location">LOCATIONS</Link></div>
+            <div className="ftlink"><Link to="/contact">CONTACT</Link></div>
         </div><br/>
         <div className="border"></div><br/>
 

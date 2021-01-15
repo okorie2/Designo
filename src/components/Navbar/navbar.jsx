@@ -23,9 +23,7 @@ import Logo from '../../Assets/images/logo.png'
               <li className = "option item" onClick={closeMobileMenu}>
                 <Link to="/about">OUR COMPANY</Link>
               </li>
-              <li className = "option item" onClick={closeMobileMenu}>
-                <Link to="/location">LOCATIONS</Link>
-              </li>
+  
               <li className = "option item" onClick={closeMobileMenu}>
                 <Link to="/contact">CONTACT</Link>
               </li>
