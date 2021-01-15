@@ -1,0 +1,7 @@
+.iconss{
+    display: flex;
+    flex-direction: row;
+}
+.iconss img{
+    width: 50%;
+}

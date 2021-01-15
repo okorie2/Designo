@@ -18,6 +18,17 @@ body{
 	margin-top: 10%;
 	margin-left: 5%;
 	text-align: left;
+	animation-name: slideright ;
+	animation-delay: 0.5s;
+	animation-duration: 1s;
+	transition: ease-out;
+}
+@keyframes slideright{
+	0%{margin-left: 0%; color: #E7816B; }
+	25%{margin-left: 1%; color: #d4aaaa;}
+	45%{margin-left: 3%; color: #dcdcdc;}
+	70%{margin-left: 5%; color: #f9f9f9;}
+	100%{margin-left: 7%; color: #ffffff;}
 }
 .homesvg{
     overflow-x: hidden;
@@ -27,23 +38,29 @@ body{
 	width: 105%;
 }
 .homesvg img{
-    width: 20%;
-    margin-top: 5%;
+    width: 40%;
+	margin-top: 5%;
+	position: absolute;
+	top: 6%;
+	right: 15%;
 }
-.home-flexgrid{
-	display: flex;
-	flex-direction: row;
-	margin-left: 15%;
+.leaf img{
+	width: 40%;
+	position: absolute;
+	top: 70%;
+	left: 0%;
+	opacity: 0.4;
 }
-.home-flexgrid img{
-	width: 68%;
-	border-radius: 5%;
-	background-image: linear-gradient(red, yellow);
+.btm-leaf img{
+	width: 40%;
+	opacity: 2%;
+	position: absolute;
+	top: 200%;
+	right: 0%;
+	opacity: 0.4;
 }
-.home-grid img{
-	
-	margin-left: -50%;
-}
+
+
 
 .illustration{
 	display: flex;
@@ -51,7 +68,8 @@ body{
 	background-color: #ffffff;
 	width: 70%;
 	margin-left: 16%;
-	margin-top: 7%;
+	margin-top: 10%;
+	margin-bottom: 15%;
 }
 .illustration p{
 	font-size: smaller;
@@ -89,18 +107,23 @@ body{
 	position:relative;
 	top:1px;
 }
-@media only screen and (min-width:768px){
+@media only screen and (min-width:746px){
 	.home, .frames, .illustration{
 		visibility: visible;
 	}
+	.home{
+		padding-bottom: 3%;
+	}
 }
 @media only screen and (max-width:680px){
+	
 	.home{
 		width: 100vw;
 		margin: 0;
 		color: #ffffff;
 		border-radius: 1%;
 		margin-bottom: 10%;
+	
 	}
 	.home-flex{
 		display: flex;
@@ -119,6 +142,17 @@ body{
 	.home-grid img{
 		margin-left:0%;
 	}
+	.homesvg{
+		overflow-x: hidden;
+	}
+	.homesvg img{
+		width: 100%;
+		height: 70vh;
+		margin-top: 5%;
+		position: absolute;
+		top: 14%;
+		left: 0%;
+	}
 	.illustration{
 		display: flex;
 		flex-direction: column;
@@ -126,6 +160,9 @@ body{
 		width: 70%;
 		margin-left: 16%;
 		margin-top: 7%;
+	}
+	.leaf{
+		visibility: hidden;
 	}
 
 }

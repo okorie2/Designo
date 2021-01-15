@@ -1,0 +1,13 @@
+.topic{
+    background-image: url(../../Assets/SVGs/smallcircle.svg);
+    background-position: center;
+    background-repeat:repeat;
+    
+    width: 70%;
+    margin-left: 10%;
+    padding: 1%;
+    margin-top: 6%;
+    border-radius: 5px;
+    background-color: #e7816b;
+    color: white;
+}

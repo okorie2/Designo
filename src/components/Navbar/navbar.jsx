@@ -3,6 +3,7 @@ import '../Navbar/navbar.css'
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import EcoIcon from '@material-ui/icons/Eco';
+import {Link} from 'react-router-dom'
 import Logo from '../../Assets/images/logo.png'
 
 
@@ -16,17 +17,17 @@ import Logo from '../../Assets/images/logo.png'
         <>
         <div className = "header">
           <div>
-        <EcoIcon className="logo title"/><b className="title"> D E S I G N O</b>
+        <EcoIcon className="logo title"/><Link to="/"><b className="title" > D E S I G N O</b></Link>
             <ul className={ click ? "nav-options active" : "nav-options"}>
             
               <li className = "option item" onClick={closeMobileMenu}>
-                <a href="#">OUR COMPANY</a>
+                <Link to="/about">OUR COMPANY</Link>
               </li>
               <li className = "option item" onClick={closeMobileMenu}>
-                <a href="#">LOCATIONS</a>
+                <Link to="/location">LOCATIONS</Link>
               </li>
               <li className = "option item" onClick={closeMobileMenu}>
-                <a href="#">CONTACT</a>
+                <Link to="/contact">CONTACT</Link>
               </li>
             </ul>
             </div>  

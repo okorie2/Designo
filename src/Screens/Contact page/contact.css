@@ -1,0 +1,60 @@
+.contactflex{
+    display: flex;
+    flex-direction: row;
+    background-color: #e7816b;
+    width: 65vw;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding: 6% 0%;
+}
+.contacttext{
+    background-image: url(../../Assets/SVGs/smallcircle.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 70%;
+    color: white;
+    text-align: left;
+    padding-left: 3%;
+    
+}
+.contactform div{
+    color: white;
+    
+}
+.contactform input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border-bottom: rgb(207, 203, 203);
+   
+  }
+ input:focus{
+     outline: none;
+ }
+ .contact-leaf img{
+     width: 42%;
+     position: absolute;
+     top: 120%;
+     right: 0;
+ }
+ @media only screen and (max-width: 900px) {
+    .contactflex{
+        display: flex;
+        flex-direction: column;
+        background-color: #e7816b;
+        width: 65vw;
+        margin-left: 15%;
+        margin-top: 5%;
+        padding: 6% 0%;
+    }
+    .contacttext{
+        background-image: url(../../Assets/SVGs/smallcircle.svg);
+        background-repeat: repeat;
+        color: white;
+        text-align: center;
+        padding-left: 15%;
+        padding-bottom: 5%;
+        
+    }
+ }

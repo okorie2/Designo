@@ -1,8 +1,27 @@
+.footer-top{
+    background-color: #E7816B;
+    color: white;
+    width: 50%;
+    margin-left: 19%;
+    border-radius: 5%;
+    padding: 3%;
+      
+}
+
+.smallcircle img, .tricircle img{
+    width: 30%;
+    position: absolute;
+    right: 10%;
+   
+}
 .footer{
     width: 100vw;
     background-color: #1d1c1e;
     color: white;
   
+}
+.footer a{
+    color: white;
 }
 .footer-flex{
     display: flex;
@@ -63,5 +82,9 @@
         padding-right: 25%;
         width: 15px;
     }
+    .footer-top{
+        visibility: hidden;
+    }
 }
+
 

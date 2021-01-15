@@ -1,8 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Graphframe from '../../components/Frames/graphics'
+import Appframe from '../../components/Frames/app'
 import BgLogo from '../../Assets/SVGs/mylogo.svg'
 import Ill1 from '../../Assets/SVGs/sth.svg'
 import Ill2 from '../../Assets/SVGs/sthh.svg'
 import Ill3 from '../../Assets/SVGs/sthhh.svg'
+import Leaf from '../../Assets/SVGs/leaf.svg'
+
 import Phone from '../../Assets/images/phone.png'
 import Col1 from '../../Assets/images/col1.jpg'
 import Col2 from '../../Assets/images/col2.jpg'
@@ -11,13 +16,14 @@ import Col4 from '../../Assets/images/col4.jpg'
 import ColD5 from '../../Assets/images/cold5.jpg'
 import ColD6 from '../../Assets/images/cold6.jpg'
 import '../Home/home.css'
+
  const Home =()=>{
 
     return(
         <div>
             
             <div className="home">
-                
+      
                 <div className="home-flex">
                     <div className="homeintro">
                     <h2>Award-winning custom<br/> designs and digital<br/> branding solutions</h2>
@@ -31,17 +37,26 @@ import '../Home/home.css'
                     </div>
 
                 </div>
+                <div className="leaf"><img src={Leaf}/></div>
                 </div>
+
                 <div className="home-flexgrid">
                     <div>
-                        <div className="item3"><img src={Col4}/> </div>
+                    <div className="item1"> 
+                        <div >
+                        <h3><Link to="/web" className="weblink">Web Design</Link></h3>
+                        <p><Link to="/web" className="weblink"> View Projects</Link> </p>
+                        <h4>Passionate Each project starts with an in-dep </h4>
+                        </div>
+                       </div>
                     </div>
-                    <div className="home-grid">
-                        <div><img src={ColD5}/></div>
-                        <div><img src={ColD6}/></div> 
+                    <div className="homeflex">
+                        <div><Graphframe/></div><br></br>
+                        <div><Appframe/></div>
                     </div>
-                   </div>
-
+                </div>
+                
+                   <div className="homesvg"><img src={BgLogo}/></div>
                   
         <div className="illustration">
             <div><img src={Ill1}/><h4> Passionate</h4><p>
@@ -54,7 +69,8 @@ import '../Home/home.css'
             We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
             strive to give them the best experience a company can provide.</p></div>
         </div>
- 
+        <div className="btm-leaf"><img src={Leaf}/></div>
+        
         </div>
     )
 }

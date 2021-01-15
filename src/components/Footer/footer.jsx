@@ -1,8 +1,11 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import '../Footer/footer.css';
 import '../Navbar/navbar.css';
 import Fb from '../../Assets/SVGs/Fbicon.svg'
 import Ig from '../../Assets/SVGs/instaIcon.svg'
+import Tricircle from '../../Assets/SVGs/3circlees.svg'
+import Scircle from '../../Assets/SVGs/smallcircle.svg'
 import Pintrest from '../../Assets/SVGs/PintIcon.svg'
 import Twitter from '../../Assets/SVGs/Twitter.svg'
 import EcoIcon from '@material-ui/icons/Eco';
@@ -10,14 +13,14 @@ import EcoIcon from '@material-ui/icons/Eco';
 const Footer = ()=>{
     return(
         <>
-         
-        <div className="footer">
+        <div>
+        <div className="footer" >
        
             <div className="footer-flex">
-            <div className="fter"><EcoIcon className="logo"/><b className="fter title"> D E S I G N O</b></div>
-            <div>OUR COMPANY</div>
-            <div>LOCATIONS</div>
-            <div>CONTACT</div>
+            <div className="fter"><EcoIcon className="logo"/><b className="fter title"><Link to="/"> D E S I G N O</Link></b></div>
+            <div><Link to="/about">OUR COMPANY</Link></div>
+            <div><Link to="/location">LOCATIONS</Link></div>
+            <div><Link to="/contact">CONTACT</Link></div>
         </div><br/>
         <div className="border"></div><br/>
 
@@ -40,6 +43,7 @@ const Footer = ()=>{
             </div>
         </div>
         
+        </div>
         </div>
         
         </>

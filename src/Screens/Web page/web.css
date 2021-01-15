@@ -1,0 +1,92 @@
+
+
+.web-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 8%;
+    grid-gap: 3%;
+    margin-left: 8%;
+    margin-right: 7%;
+    margin-bottom: 10%;
+    
+}
+.web-grid img{
+    width: 80%;
+    border-radius: 8%;
+}
+.card{
+    width: 75%;
+    padding: 1%;
+    margin-left: 11%;
+    border-radius: 5px;
+    background-color: #FDF3F0;
+    color: black;
+}
+.card h4{
+    color: #e7816b;
+}
+.first {
+    background-color: #e7816b;
+    color: white;
+    
+}
+.first h4{
+    color: white;
+}
+.web-flex{
+    display: flex;
+    flex-direction: wrap;
+  
+}
+.flex1{
+    margin-left: 17%;
+    margin-bottom: 10%;
+    
+}
+
+.flex2{
+    margin-left: 6%;
+    margin-bottom: 10%;
+    
+}
+
+
+
+
+@media only screen and (max-width: 670px) {
+    .web-grid{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8%;
+        grid-gap: 3%;
+        margin-left: 8%;
+        margin-right: 7%;
+        margin-bottom: 10%;
+        
+    }
+    .web-grid div{
+        margin-bottom: 10%;
+    }
+    
+
+}
+/*@media only screen and (min-width: 768px ){
+    .web-grid{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8%;
+        grid-gap: 3%;
+        margin-left: 8%;
+        margin-right: 7%;
+        margin-bottom: 10%;
+        
+    }
+    .web-grid div{
+        margin-bottom: 10%;
+    }
+    .tabflex{
+        display: flex;
+        flex-direction: row;
+    }
+   
+}*/
